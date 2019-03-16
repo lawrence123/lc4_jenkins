@@ -35,7 +35,7 @@ service 'jenkins' do
 end
 
 firewalld_manager '8080/tcp' do
-  action :create
+  action :addport
 end
 
 firewalld_manager 'reload' do
